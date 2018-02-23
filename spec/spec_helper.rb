@@ -1,5 +1,7 @@
 require 'rest-client'
 require 'json'
+require 'support/request_helper'
+
 
 
 RSpec.configure do |config|
@@ -15,10 +17,3 @@ RSpec.configure do |config|
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
 end
-
-
-#
-# RSpec.configure do |config|
-#
-#   config.include Requests::JsonHelpers, type: :request
-# end

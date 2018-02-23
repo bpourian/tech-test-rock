@@ -1,8 +1,9 @@
 describe "Testing api" do
-
   it "api status to be OK " do
-    response = RestClient.get 'https://private-anon-fb756654dd-driftrockdevtest.apiary-proxy.com/status'
-    json = JSON.parse(response.body)
-    expect(json).to eq({"status"=>"ok"})
+    expect(status_helper).to eq({"status"=>"ok"})
+  end
+
+  it "user json file to be returned" do
+    expect(user_info_helper).to be(true)
   end
 end
