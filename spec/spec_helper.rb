@@ -1,6 +1,6 @@
 require 'rest-client'
 require 'json'
-require 'support/request_helper'
+require 'api_support_helpers'
 
 
 

@@ -4,6 +4,10 @@ describe "Testing api" do
   end
 
   it "user json file to be returned" do
-    expect(user_info_helper).to be(true)
+    expect(user_json_helper).to be(true)
+  end
+
+  it "purchase json file to be returned" do
+    expect(purchase_json_helper).to be(true)
   end
 end
