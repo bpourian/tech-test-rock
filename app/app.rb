@@ -8,7 +8,8 @@ puts response
 
 
 
-response2 = RestClient.get 'https://private-anon-fb756654dd-driftrockdevtest.apiary-proxy.com/users?page=&per_page='
-puts response2
+# response2 = RestClient.get 'https://private-anon-fb756654dd-driftrockdevtest.apiary-proxy.com/users?page=3&per_page=20'
+# puts response2.body
 
-puts response2.read
+response = RestClient.get 'https://private-anon-fb756654dd-driftrockdevtest.apiary-proxy.com/purchases?page=&per_page='
+puts response
