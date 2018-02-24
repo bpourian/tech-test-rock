@@ -11,7 +11,13 @@ class Interface
     @user_class.load_each_page_and_make_query(key, value)
   end
 
-  def total_spent_by_user(key="user_id", value)
+  def total_spent(key="user_id", value)
     @purchase_class.load_each_page_and_make_query_total_spend(key, value)
   end
+
+  def total_spent_by_user(key="email", value)
+    user_id = find_user_id(key, value)
+    total_spent(user_id)
+  end
+
 end
