@@ -6,8 +6,8 @@ I have not had much experience of using API's and manipulating large files
 in JSON. So I really enjoyed this test as it was both challenging and gave me
 an opportunity to learn new things.
 
-I feel that I could have researched mocking my tests thoroughly to create
-isolation, given more time was available. I did hit a bump with the mock server as it produced the same data regardless of which page it was on and
+I feel that I could have researched mocking API tests more thoroughly in order
+to create isolation if I had more time. I did hit a stumbling block with the mock server as it produced the same data regardless of which page it was on and
 therefore my guard conditions were not being triggered for content length.
 
 I haven't completed all the requirements of the test. The two remaining
@@ -16,11 +16,11 @@ requirements are 'most_sold' and 'most_loyal'.
 
 
 ## Usage
-Navigate to your project directory in your terminal and type in the following
+Navigate to your project directory using your terminal and type in the following
 ```
 $ git clone https://github.com/bpourian/tech-test-rock.git
 ```
-Once the download is complete change into the new directory
+Once cloning is complete change into the new directory
 ```
 $ cd tech-test-rock
 ```
@@ -28,7 +28,7 @@ Make sure you run bundle
 ```
 $ bundle install
 ```
-To run the app use one of the following commands;
+To run the app use one of the following commands  
 
 ```
 $ruby app.rb total_spend EMAIL
