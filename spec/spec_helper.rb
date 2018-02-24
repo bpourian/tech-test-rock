@@ -1,8 +1,4 @@
-require 'rest-client'
-require 'json'
-require 'api_support_helpers'
-
-
+require 'support_helpers'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

@@ -1,12 +1,11 @@
-def purchase_json_helper
-  response = RestClient.get 'https://private-anon-fb756654dd-driftrockdevtest.apiary-mock.com/purchases'
+def json(url)
+  response = RestClient.get(url)
   data = JSON.parse(response.body)
-  result = false
+end
 
+def purchase_json_helper
+  data = json('https://private-anon-fb756654dd-driftrockdevtest.apiary-mock.com/purchases')
   data['data'].each do |hash|
-      hash.each do |k,v|
-          result = true if hash[k] == "Some purchaseable item"
-      end
+    return true if hash["item"] == "Some purchaseable item"
   end
-  result
 end
