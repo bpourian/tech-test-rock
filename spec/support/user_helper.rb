@@ -30,13 +30,15 @@ def expected_user_response_helper
     }
 end
 
-def user_lakin
-  {
-    "id"=>"ZZLB-4HCN-OA3N-LGWB",
-    "first_name"=>"Jack",
-    "last_name"=>"Lakin",
-    "phone"=>"(620) 104-0175",
-    "email"=>"jack_lakin@rodriguezschuppe.io"
-  }
+def user_drift
+  [
+    {
+      "id"=>"12DF-2324-GA2D-31RT",
+      "first_name"=>"Drift",
+      "last_name"=>"Rock",
+      "phone"=>"0-000-000-0000",
+      "email"=>"drift.rock@email.com"
+      }
+    ]
 
 end

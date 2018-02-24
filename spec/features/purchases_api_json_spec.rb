@@ -13,10 +13,13 @@ describe 'Testing purchases class' do
 
   it "must return correct sum of purchases for user" do
     mock_server = purchases_rest_client_response_helper
-
     @purchases.json_parse(mock_server)
-
     expect(@purchases.find_purchases_total("user_id","12DF-2324-GA2D-31RT")).to eq(19.99)
   end
+
+  # it "must go through every page and find total spent by user" do
+  #   # @purchases.url("https://private-anon-fb756654dd-driftrockdevtest.apiary-mock.com/purchases", 1,20)
+  #   # expect(@purchases.load_each_page_and_make_query_total_spend("12DF-2324-GA2D-31RT")).to eq(19.99)
+  # end
 
 end
