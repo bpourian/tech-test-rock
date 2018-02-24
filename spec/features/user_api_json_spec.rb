@@ -8,7 +8,7 @@ describe 'Testing user class' do
   end
 
   it "json_parse to return parsed object" do
-    expect(@user.json_parse(rest_client_response_helper)).to eq(expected_response_helper)
+    expect(@user.json_parse(user_rest_client_response_helper)).to eq(expected_user_response_helper)
   end
 
   it "must return correct user with given key and value" do

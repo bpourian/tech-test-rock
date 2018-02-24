@@ -3,7 +3,7 @@ def json(url)
   data = JSON.parse(response.body)
 end
 
-def rest_client_response_helper
+def user_rest_client_response_helper
   response = RestClient.get('https://private-anon-fb756654dd-driftrockdevtest.apiary-mock.com/users')
 end
 
@@ -17,7 +17,7 @@ def user_json_helper
 end
 
 
-def expected_response_helper
+def expected_user_response_helper
   {"data"=>[
     {
       "id"=>"12DF-2324-GA2D-31RT",
