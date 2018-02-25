@@ -2,6 +2,11 @@
 
 I built this app with TDD approach and the view that I can change and scale it with new requirements.
 
+I haven't completed all the requirements of the test. The two remaining
+requirements are 'most_sold' and 'most_loyal'. I would like to have been able
+to pull the data into PostgreSQL and complete the rest of the challenge. However,
+the total_spend is complete. 
+
 I have not had much experience of using API's and manipulating large files
 in JSON. So I really enjoyed this test as it was both challenging and gave me
 an opportunity to learn new things.
@@ -10,8 +15,7 @@ I feel that I could have researched mocking API tests more thoroughly in order
 to create isolation if I had more time. I did hit a stumbling block with the mock server as it produced the same data regardless of which page it was on and
 therefore my guard conditions were not being triggered for content length.
 
-I haven't completed all the requirements of the test. The two remaining
-requirements are 'most_sold' and 'most_loyal'.
+
 
 
 ## Travis
