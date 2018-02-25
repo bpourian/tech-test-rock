@@ -1,6 +1,6 @@
 # Tech Test - API
 
-I built this app with TDD approach and the view that I can change and scale the application with new requirements.
+I built this app with TDD approach and the view that I can change and scale it with new requirements.
 
 I have not had much experience of using API's and manipulating large files
 in JSON. So I really enjoyed this test as it was both challenging and gave me
