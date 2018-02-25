@@ -1,13 +1,12 @@
 class Purchases
 attr_reader :purchases_data, :parsed_data, :url,
 
-  def initialize(url_link = "https://driftrock-dev-test.herokuapp.com/purchases")
-    @url = url_link
+  def initialize
     @sorted_array = []
   end
 
-  def url(url_link = @url, page, per_page)
-    url = url_link+"?page=#{page}&per_page=#{per_page}"
+  def url(page, per_page)
+    url = "https://driftrock-dev-test.herokuapp.com/purchases?page=#{page}&per_page=#{per_page}"
   end
 
   def purchases_api_request(page, per_page)
@@ -15,7 +14,7 @@ attr_reader :purchases_data, :parsed_data, :url,
   end
 
   def json_parse(purchase_data)
-    @parsed_data = JSON.parse(purchase_data)
+     @parsed_data = JSON.parse(purchase_data)
   end
 
   def find_purchases_total(key,value)
