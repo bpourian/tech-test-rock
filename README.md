@@ -13,8 +13,6 @@ therefore my guard conditions were not being triggered for content length.
 I haven't completed all the requirements of the test. The two remaining
 requirements are 'most_sold' and 'most_loyal'.
 
-
-
 ## Usage
 Navigate to your project directory using your terminal and type in the following
 ```
