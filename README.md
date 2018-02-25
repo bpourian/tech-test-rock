@@ -16,12 +16,10 @@ requirements are 'most_sold' and 'most_loyal'.
 
 ## Test Automation with Travis
 
-Please click the link below for build report:
-
-[https://travis-ci.org/bpourian/tech-test-rock/builds](https://travis-ci.org/bpourian/tech-test-rock/builds)
 ![Screenshot](./img/travis.png)
 
-
+Please click the link below for build report:
+[https://travis-ci.org/bpourian/tech-test-rock/builds](https://travis-ci.org/bpourian/tech-test-rock/builds)
 
 ## Usage
 Navigate to your project directory using your terminal and type in the following
