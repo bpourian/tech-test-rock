@@ -14,7 +14,7 @@ I haven't completed all the requirements of the test. The two remaining
 requirements are 'most_sold' and 'most_loyal'.
 
 
-## Test Automation with Travis
+## Travis
 
 ![Screenshot](./img/travis.png)
 
