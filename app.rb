@@ -10,7 +10,6 @@ when 'total_spend'
   if method_argument == nil
     puts "You must pass an email as argument"
   else
-    # p method_argument.to_s
     puts 'searching database.......'
     puts "£#{@interface.total_spent_by_user(method_argument)}"
   end
