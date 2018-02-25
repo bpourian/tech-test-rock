@@ -22,4 +22,10 @@ describe 'Testing purchases class' do
   #   # expect(@purchases.load_each_page_and_make_query_total_spend("12DF-2324-GA2D-31RT")).to eq(19.99)
   # end
 
+  it "find the most sold item from the list" do
+
+    @purchases.filter_total_spent_by("item")
+    # expect(@purchases.find_total_spent).to
+  end
+
 end
