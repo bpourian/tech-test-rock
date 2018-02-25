@@ -45,26 +45,30 @@ attr_reader :purchases_data, :parsed_data, :url,
       @parsed_data['data'].each do |purchase_info|
 
         purchase_info.each do |k,v|
+        if @sorted_array == nil
+            new_hash = {purchase_info[key] => 1}
+            @sorted_array = [new_hash]
 
-        if @sorted_array == []
-
-          new_hash = purchase_info[key] = v.to_i
-          @sorted_array = new_hash
-
-          elsif purchase_info[k] == key
+          elsif k == key && @sorted_array != nil
+  
             @sorted_array.each do |item|
-              if item.has_key?(k)
-                  array_index = @sorted_array.index(purchase_info)
-                  @sorted_array[array_index][k] += v
+
+              if item.has_key?(v)
+
+                array_index = @sorted_array.index {|h| h[v] }
+                @sorted_array[array_index][v] += 1
+
                 else
-                  purchase_info[k] = v.to_i
-                  @sorted_array.push(purchase_info)
+
+                  new_hash = {purchase_info[key] => 1}
+                  @sorted_array.push(new_hash)
+
               end
             end
         end
       end
     end
-
+    p 'arryay  ====='
     p @sorted_array
   end
 
